@@ -1,7 +1,7 @@
 Markov Chains - Hidden Markov Models
 ====================================
 
-Código del curso [CS50’s Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/2024/), _lecture 2 "uncertainty"_, refactorizado a la nueva api de pomegranate v1.0.4 [jmschrei](https://pomegranate.readthedocs.io/en/latest/tutorials/B_Model_Tutorial_4_Hidden_Markov_Models.html)
+Código del curso [CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/2024/), _lecture 2 "uncertainty"_, refactorizado a la nueva api de pomegranate v1.0.4 [jmschrei](https://pomegranate.readthedocs.io/en/latest/tutorials/B_Model_Tutorial_4_Hidden_Markov_Models.html)
 
 ## Instalación
 
@@ -212,11 +212,11 @@ Las probabilidades $P(X_n | X_{n-1})$ son las **probabilidades de transición**.
 
 Cuando estas probabilidades son independientes del tiempo (de $n$) la cadena posee **probabilidades de transición estacionarias** (homogéneas) en el tiempo.
 
-Así, si la probabilidad de que $X_{n+1}$ esté en el estado $j$ dado que $X_n$ está en el estado $i$ es la **probabilidad de transición** en un paso de $i$ a $j$ y la denotamos por $P^{nn+1}_{ij}$.
+Así, si la probabilidad de que $X_{n+1}$ esté en el estado $j$ dado que $X_n$ está en el estado $i$ es la **probabilidad de transición** en un paso de $i$ a $j$ y la denotamos por $P^{n,n+1}_{ij}$.
 
-$$ P^{nn+1}_{ij} = P(X_{n+1} = j | X_n = i) $$
+$$ P^{n,n+1}_{ij} = P(X_{n+1} = j | X_n = i) $$
 
-En este caso $P^{nn+1}_{ij}=P_{ij}$ no depende de $n$ y $P_{ij}$ es la probabilidad de que la cadena pase del estado $i$ al estado $j$ en un paso.
+En este caso $P^{n,n+1}_{ij}=P_{ij}$ no depende de $n$ y $P_{ij}$ es la probabilidad de que la cadena pase del estado $i$ al estado $j$ en un paso.
 
 
 ### Ejercicio Cadenas de Markov

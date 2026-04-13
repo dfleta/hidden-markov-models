@@ -10,6 +10,21 @@ desde la habitación 3.
 Distribuímos las probabilidades de manera igual al inicio.
 La probabilidad de permanecer en la misma habitación es 1/5,
 y la de cambiar de habitación 2/5.
+
+
++--------+--------+--------+-------+
+|        |        |        |       |
+|  H-1      H-2      H-3     H-6   |
+|        |        |        |       |
++--    --+--------+--------+-------+
+|        |
+|  H-4   |
+|        |
++--    --+
+|        |
+|  H-5   |
+|        |
++--------+
 '''
 
 # Probabilidades iniciales

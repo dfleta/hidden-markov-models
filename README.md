@@ -420,7 +420,7 @@ P = torch.tensor([
 
 # Probabilidades en el segundo dia de la serie
 w = torch.matmul(v, P)
-# w = tensor([[0.6000, 0.4000]])
+#  w = tensor([[0.6000, 0.4000]])
 ```
 
 La probabilidad de que el segundo dia de la serie sea soleado es $0.6$ y de que sea lluvioso $0.4$.
@@ -463,7 +463,7 @@ En los _scripts_ [`model_robot_0x.py`](./markov_chain/model_robot_01.py) encontr
 
 Se plantean 6 diferentes supuestos en función de la distribución de la probabilidad inicial y de las probabilidades de transición entre las habitaciones (estados).
 
-Describimos el caso [model_robot_06](./markov_chain/model_robot_06.py)
+#### Describimos el caso [model_robot_06](./markov_chain/model_robot_06.py)
 
 Disponemos de una vivienda en la que hay 6 habitaciones. El espacio de estados es, por tanto, $\epsilon = \{1,2,3,4,5,6\}$.
 
@@ -475,7 +475,25 @@ La probabilidad de transición del estado $i$ al $j$ es:
 
 $$ p_{ij} = P(X_{n+1} = j | X_n = i) $$
 
-y la matriz de transición es de la forma:
+La distribución de habitaciones es de la forma:
+
+```text
++--------+--------+--------+-------+
+|        |        |        |       |
+|  H-1      H-2      H-3     H-6   |
+|        |        |        |       |
++--    --+--------+--------+-------+
+|        |
+|  H-4   |
+|        |
++--    --+
+|        |
+|  H-5   |
+|        |
++--------+
+```
+
+por lo que la matriz de transición es ahora:
 
 $$
 P =

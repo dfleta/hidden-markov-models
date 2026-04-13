@@ -10,6 +10,20 @@ o permanece en la misma con igual probabilidad.
 Ahora, las habitaciones 2 y 3, y 4 y 5 están conectadas.
 Sin embargo, a la habitación 6 sólo puede accederse
 desde la habitación 3.
+
++--------+--------+--------+-------+
+|        |        |        |       |
+|  H-1      H-2      H-3     H-6   |
+|        |        |        |       |
++--    --+--------+--------+-------+
+|        |
+|  H-4   |
+|        |
++--    --+
+|        |
+|  H-5   |
+|        |
++--------+
 '''
 
 # Probabilidades iniciales

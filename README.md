@@ -376,9 +376,9 @@ En nuestro caso:
 
 $$ v = (0.5, 0.5) $$
 
-El vector de probabilidades iniciales $\vec v$ y la matriz de transición $P$ determinan la probabilidad para el estado de la cadena en el segundo instante de tiempo, dada por el vector $\vec vP$.
+El vector de probabilidades iniciales $\vec v$ y la matriz de transición $P$ determinan la probabilidad para el estado de la cadena en el segundo instante de tiempo, dada por el vector $\vec {v}P$.
 
-Si las probabilidades de los diversos estados en el instante $n$ se especifican por el vector de probabilidades $\vec w$, entonces las probabilidades en el instante $n + 1$ se especifican por el vector de probabilidades $\vec wP$.
+Si las probabilidades de los diversos estados en el instante $n$ se especifican por el vector de probabilidades $\vec w$, entonces las probabilidades en el instante $n + 1$ se especifican por el vector de probabilidades $\vec {w}P$.
 
 Vamos a calcular estas probabilidades en nuestro ejemplo.
 
